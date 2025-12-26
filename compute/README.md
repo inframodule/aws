@@ -11,7 +11,7 @@ Terraform module to deploy one or more EC2 instances into a VPC, with optional s
 ## Usage
 ```hcl
 module "compute" {
-  source = ".git::ssh://YOUR_REPO_URL/modules/aws/compute?ref=v1.0.0""
+  source = ".git::https://github.com/inframodule/aws/tree/main/compute?ref=v1.0.0""
 
   name_prefix                 = "compute"
   instance_count              = 2
