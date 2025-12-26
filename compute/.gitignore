@@ -1,0 +1,32 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+AGENTS.md
+enhancements.md 
+.tflint.hcl
+# Terraform variable files (can contain secrets)
+*.tfvars
+*.tfvars.json
+
+# CLI config files
+.terraformrc
+terraform.rc
+
+# Logs
+*.log
+
+# Go/Terratest
+go.work
+go.work.sum
+go.sum
+*.test
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

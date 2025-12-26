@@ -1,0 +1,29 @@
+aws_region     = "us-east-1"
+name_prefix    = "compute-ha"
+instance_count = 2
+ami_id         = "ami-0123456789abcdef0"
+instance_type  = "t3.micro"
+vpc_id         = "vpc-0123456789abcdef0"
+subnet_ids     = ["subnet-aaaabbbbccccdddd0", "subnet-11112222333344440"]
+
+allowed_cidr_blocks         = ["203.0.113.0/24"]
+associate_public_ip_address = true
+allow_public_ip             = true
+
+imds_http_tokens                 = "required"
+imds_http_endpoint               = "enabled"
+imds_http_put_response_hop_limit = 1
+imds_instance_metadata_tags      = "disabled"
+imds_http_protocol_ipv6          = "disabled"
+
+require_volume_encryption = true
+kms_key_id                = null
+enable_ssh                = true
+enable_rdp                = true
+ssh_allowed_cidr_blocks   = null
+rdp_allowed_cidr_blocks   = null
+
+tags = {
+  Environment = "dev"
+  Owner       = "platform"
+}
