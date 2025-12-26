@@ -67,6 +67,12 @@ module "compute" {
 - `examples/ha` for multi-subnet (multi-AZ) placement.
 - `examples/windows` for RDP-focused Windows hosts.
 
+## Versioning and Releases
+Use Git tags (SemVer) for module releases. Example workflow:
+- Create a tag in the repo root: `git tag -a v1.0.0 -m "compute module v1.0.0"`.
+- Push tags: `git push origin v1.0.0`.
+- Reference a tag in Terraform with `?ref=v1.0.0` (example: `source = "git::ssh://YOUR_REPO_URL/modules/aws/compute?ref=v1.0.0"`).
+
 ## Testing and Linting
 - `terraform fmt -recursive` to format.
 - `terraform validate` to validate module and examples.
