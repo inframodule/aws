@@ -9,6 +9,7 @@ The public modules are secure, composable infrastructure primitives. The project
 - [`alb`](alb/README.md): HTTPS-first Application Load Balancer with restricted networking, target registration, and optional WAF integration.
 - [`autoscaling`](autoscaling/README.md): hardened EC2 Auto Scaling with rolling refresh, target tracking, and optional mixed Spot capacity.
 - [`compute`](compute/README.md): EC2 instances with optional security groups and IMDSv2 hardening.
+- [`rds-postgresql`](rds-postgresql/README.md): private PostgreSQL databases with managed credentials, encrypted storage, backups, TLS enforcement, and optional Multi-AZ availability.
 - [`s3`](s3/README.md): private, versioned object storage with explicit encryption, transport controls, lifecycle management, and policy composition.
 - [`vpc`](vpc/README.md): secure multi-AZ VPC networking with subnet tiers, optional NAT, gateway endpoints, and Flow Logs.
 

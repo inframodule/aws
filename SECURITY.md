@@ -8,6 +8,7 @@ Security fixes are applied to the latest tagged release of each module. Older re
 |---|---|
 | `alb` | `alb-v1.0.0` |
 | `compute` | `1.0.0` |
+| `rds-postgresql` | `rds-postgresql-v1.0.0` |
 | `s3` | `s3-v1.0.0` |
 | `vpc` | `vpc-v1.0.0` |
 
